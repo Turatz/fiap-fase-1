@@ -1,63 +1,52 @@
-**#Overview**
+# Overview
 
+Esse projeto simula o sistema de verificação pré-decolagem de uma nave espacial. Basicamente, o programa pede pra você digitar os dados atuais da nave (energia, temperatura interna e externa, pressão dos tanques, integridade estrutural e status dos módulos críticos), confere se tudo está dentro dos limites seguros e te diz se a nave está **pronta pra decolar** ou se a **decolagem precisa ser abortada** — e por quê. Se estiver tudo certo, ele ainda calcula quanto de energia sobra depois da decolagem e por quantas horas a nave consegue se manter operando.
 
+## Tecnologias usadas
 
-Este é um programa para resolução de problemas envolvendo recursos necessários para o lançamento de Naves Espaciais. 
+- Python 3.10+
+- Jupyter Notebook
 
+## Pré-requisitos
 
+Pra rodar na sua máquina, você vai precisar ter instalado:
 
-**# Tecnologias Utilizadas:**
+- Python 3.10 ou superior
+- Git
+- Jupyter Notebook (ou uma extensão que rode `.ipynb`, tipo a do VS Code)
 
-* **Python 3.10+**
+## Como rodar
 
+1. Clone o repositório:
+   ```
+   git clone https://github.com/Turatz/fiap-fase-1.git
+   ```
 
+2. Abra o arquivo `NotebookPython.ipynb`, que está dentro da pasta `fase 1`, no Jupyter Notebook, VS Code ou no editor que você preferir.
 
-Siga os passos abaixo para configurar o ambiente e rodar o programa em sua máquina:
+3. Rode todas as células do notebook em ordem.
 
+4. O programa vai te pedir pra preencher alguns dados. Fique de olho nos limites abaixo, porque se algum valor sair da faixa, a decolagem é abortada:
 
+   ![Alt text](https://i.imgur.com/QLvgnnj.png)
 
-**# Pré-requisitos**
+   - Energia: mínimo de 20%
+   - Temperatura externa: entre 0 e 45ºC
+   - Temperatura interna: entre 15 e 35ºC
+   - Pressão dos tanques: entre 100 e 145 bar
+   - Integridade estrutural: 0 (negativo) ou 1 (positivo)
+   - Status dos módulos críticos: 0 (falha) ou 1 (ok)
 
-* **Python 3.10** ou superior
-* **Git**
+   ![Alt text](https://i.imgur.com/jdGIJeA.png)
 
+5. Se algum requisito falhar, o programa mostra exatamente qual foi o problema e pergunta se você quer tentar de novo:
 
+   ![Alt text](https://imgur.com/a/FXhVpF0)
 
-**# Passo a Passo**
+6. Se tudo estiver dentro do esperado, ele libera a decolagem e já calcula a autonomia energética da nave (energia disponível, perdas, energia líquida e quantas horas de autonomia sobram):
 
+   ![Alt text](https://imgur.com/a/hjwHZNa)
 
+## Licença
 
-1. **Clone do repositório**
--   Executar **Git bash** em sua máquina
--   cd https://github.com/Turatz/fiap-fase-1.git
-
-
-2. **Abrir o arquivo .py** em sua pasta destino
-
-3. Rodar o código no editor de sua escolha
-
-4. Preencher dados requisitados pelo programa via inputs com base no que o programa lhe perguntar 
- 
-    ![Alt text](https://i.imgur.com/QLvgnnj.png)
- 
-    ATENÇÃO: Os inputs devem estar dentro dos requistos mínimos à seguir:
- 
-    Energia = Mínimo de 20
-    Temperatura Externa = Entre 0 e 45ºC
-    Temperatura Interna = Entre 15 e 35ºC
-    Pressão dos tanques: = Entre 100 e 145
-    Integridade estrutural = Entre 0 e 1 (sendo 0 = Negativo / 1 = Positivo)
- 
-    ![Alt text](https://i.imgur.com/jdGIJeA.png)
- 
- 
- 5. Após o preenchimento dos dados, o programa irá avaliar a capacidade e autonomia de seu foguete, e lhe dará um veredito se uma decolagem seria possível com base nos dados fornecidos, juntamente com um cálculo da autonomia de seu foguete, com uma estimativa de tempo.
- Exemplo do programa em funcionamento:
- 
-    ![Alt text](https://imgur.com/tZmeiVz.jpg)
-    
- 
-
-**#Licença** 
-
-* Este programa não é licenciado.
+Esse programa não tem licença.
