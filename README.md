@@ -41,11 +41,11 @@ Pra rodar na sua máquina, você vai precisar ter instalado:
 
 5. Se algum requisito falhar, o programa mostra exatamente qual foi o problema e pergunta se você quer tentar de novo:
 
-   ![Alt text](https://i.imgur.com/USAnMgS.png)(https://i.imgur.com/3SMU57d.png)
+   ![Alt text](https://i.imgur.com/USAnMgS.png)
 
 6. Se tudo estiver dentro do esperado, ele libera a decolagem e já calcula a autonomia energética da nave (energia disponível, perdas, energia líquida e quantas horas de autonomia sobram):
 
-   ![Alt text](https://imgur.com/5e28b9c7-0f5c-403f-bd54-56d2458d3ae9)
+   ![Alt text](https://i.imgur.com/czO2pTz.png)
 
 ## Licença
 
