@@ -45,7 +45,7 @@ Pra rodar na sua máquina, você vai precisar ter instalado:
 
 6. Se tudo estiver dentro do esperado, ele libera a decolagem e já calcula a autonomia energética da nave (energia disponível, perdas, energia líquida e quantas horas de autonomia sobram):
 
-   ![Alt text](blob:https://imgur.com/5e28b9c7-0f5c-403f-bd54-56d2458d3ae9)
+   ![Alt text](https://imgur.com/5e28b9c7-0f5c-403f-bd54-56d2458d3ae9)
 
 ## Licença
 
